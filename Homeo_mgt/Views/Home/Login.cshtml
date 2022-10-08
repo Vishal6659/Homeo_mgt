@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Login Page";
+    Layout = "_LoginLayout";
+}
+
+<style>
+    .container{
+       position:absolute;
+       top:50%;
+       left:50%;
+       transform:translate(-50%, -50%);
+       width:500px;
+       background: white;
+       border-radius: 10px;
+
+    }
+    .container h2{
+        text-align:center;
+        padding:0 0 20px 0;
+        margin-top:20px;
+    }
+
+    .form-group {
+        padding: 0 40px;
+        box-sizing:border-box;
+    }
+</style>
+
+<div class="container">        
+    <h2>
+        Login Page
+    </h2>
+    <hr />
+    <div class="form-group">
+        <label class="control-label">Username</label>
+        <input class="form-control" type="text" placeholder="Enter Username" />
+    </div>
+    <br />
+    <div class="form-group">
+        <label class="control-label">Password</label>
+        <input class="form-control" type="password" placeholder="Enter Password" />
+    </div>
+    <br />
+    <div class="form-group">
+        <input class="form-control btn btn-primary mb-4" type="submit" />
+    </div>
+    
+</div>
+
