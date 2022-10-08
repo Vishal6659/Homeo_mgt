@@ -13,16 +13,49 @@ namespace Homeo_mgt.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        [HttpGet]
+        public IActionResult Login()
         {
             return View();
         }
 
-        public IActionResult Login() 
+        [HttpPost]
+        public IActionResult Login(LoginModel loginModel) 
         {
+            try
+            {
+                if (loginModel != null)
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+            catch (Exception ex)
+            { 
+                throw;
+            }
             return View();
         }
 
-       
+        [HttpGet]
+        public IActionResult Registration() 
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Registration(RegistrationModel registrationModel) 
+        {
+            try
+            {
+                if (registrationModel != null)
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            return View();
+        }       
     }
 }

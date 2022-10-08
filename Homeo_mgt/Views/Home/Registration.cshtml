@@ -1,0 +1,123 @@
+﻿@{
+    ViewData["Title"] = "Registration";
+    Layout = "_LoginLayout";
+}
+
+<style>
+    .card {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        width: 1500px;
+        overflow: hidden;
+    }
+
+        .card h2 {
+            text-align: center;
+            padding: 0 0 7px 0;
+            margin-top: 15px;
+        }
+
+    .btn {
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    }
+
+    .btn:hover{
+            background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+    }
+</style>
+
+<div class="card">
+    <div class="card-header"><h2>Registration Page</h2></div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4">
+                <label class="control-label"><span style="color:red">*</span>First Name</label>
+                <input type="text" class="form-control" placeholder="First Name" />
+            </div>
+            <div class="col-md-4">
+                <label class="control-label">Middle Name</label>
+                <input type="text" class="form-control" placeholder="Middle Name" />
+            </div>
+            <div class="col-md-4">
+                <label class="control-label">Last Name</label>
+                <input type="text" class="form-control" placeholder="Last Name" />
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-4">
+                <label class="control-label"><span style="color:red">*</span>Age</label>
+                <input type="text" class="form-control" placeholder="Enter Age" />
+            </div>
+            <div class="col-md-4">
+                <label class="control-label"><span style="color:red">*</span>Mobile Number</label>
+                <input type="text" class="form-control" placeholder="Enter Mobile Number" />
+            </div>
+            <div class="col-md-4">
+                <label class="control-label">Email</label>
+                <input type="text" class="form-control" placeholder="Enter Email" />
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-4">
+                <label class="control-label"><span style="color:red">*</span>Address</label>
+                <input type="text" class="form-control" placeholder="Enter Address" />
+            </div>
+            <div class="col-md-4">
+                <label class="control-label">Office Name</label>
+                <input type="text" class="form-control" placeholder="Enter Office Name" />
+            </div>
+            <div class="col-md-4">
+                <label class="control-label"><span style="color:red">*</span>Landmark</label>
+                <input type="text" class="form-control" placeholder="Enter Landmark" />
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-4">
+                <label class="control-label"><span style="color:red">*</span>City</label>
+                <input type="text" class="form-control" placeholder="Enter City" />
+            </div>
+            <div class="col-md-4">
+                <label class="control-label"><span style="color:red">*</span>State</label>
+                <input type="text" class="form-control" placeholder="Enter State" />
+            </div>
+            <div class="col-md-4">
+                <label class="control-label">Country</label>
+                <input type="text" class="form-control" placeholder="Enter Country" />
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-4">
+                <label class="control-label"><span style="color:red">*</span>Gender</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" style="display:flex">
+                <div class="col-md-2">
+                    <input type="radio" name="gender" value="Male"/>
+                    <label>Male</label>
+                </div>
+                <div class="col-md-2">
+                    <input type="radio" name="gender" value="Female" />
+                    <label>Female</label>
+                </div>
+                <div class="col-md-2">
+                    <input type="radio" name="gender" value="Not to say" />
+                    <label>Not to say</label>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <input class="form-control btn btn-primary" type="submit" />
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</div>
